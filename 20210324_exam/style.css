@@ -71,12 +71,14 @@ footer{
     float:left;
     height:100px;
     width: 800px;
+    background-color: #ababab;
 }
 
 .logo{
     float:left;
     height: 40px;
     width: 200px;
+
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -219,6 +221,45 @@ footer{
 #modal.active{
 display: block;
 }
+
+.modal_up{
+    width: 400px;
+    height: 300px;
+    position: fixed;
+    left: 40%;
+    top: 40%;
+    background-color: #ffffff;
+}
+
+.uptitle{
+    margin-top: 20px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.upbody{
+    padding:30px;
+    text-align: center;
+    font-size:20px;
+    line-height: 40px;
+}
+
+.btn{
+    height: 20px;
+    width: 80px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 3px;
+    background: #cccccc;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
 .gallery{
     float: left;
     height:190px;
@@ -253,6 +294,9 @@ display: block;
     float:left;
     height:100px;
     width:600px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 100px;
 }
 
 .site{
@@ -267,8 +311,35 @@ display: block;
     width:200px;
 }
 
+.sns ul{
+    text-align:center;
+}
+
+.sns ul li{
+    display: inline-block;
+}
+
+.sns img{
+    height: 45px;
+    width: 45px;
+    padding: 5px;
+}
+
+.sns img:hover{
+    opacity: 0.5;
+}
+
 .familysite{
     float:right;
     height: 50px;
     width: 200px;
+}
+
+.familysite select{
+    float: right;
+    height: 30px;
+    width: 180px;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 14px;
 }

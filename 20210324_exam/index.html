@@ -4,23 +4,31 @@
     <meta charset="UTF-8">
     <title>연꽃마을축제</title>
     <link href="style.css" type="text/css" rel="stylesheet">
-    <script src="javascript/jqiery-1.12.3.j3"></script>
-    <script src="jquery.script.js" defer type="text/javascript">
+    <script src="jquery.min.js"></script>
+    <script>
 
     jQuery(document).ready(function(){
 
         $('.navi>li').mouseover(function(){
         $(this).find('.submenu').stop().slideDown(500);
-    })
-        .mouseout(function(){
+    }).mouseout(function(){
         $(this).find('.submenu').stop().slideUp(500);
     });
-
+    
     $('.imgslide a:gt(0)').hide();
     setInterval(function(){
         $('.imgslide a:first-child').fadeOut()
         .next('a').fadeIn()
         .end().appendTo('.imgslide');},3000);
+
+        $(".notice li:first").click(function(){
+            $("#modal").addClass("active");
+        });
+        $(".btn").click(function(){
+            $("#modal").removeClass("active");
+        });
+    });
+
   </script>
 </head>
 <body>
@@ -119,14 +127,20 @@
         <footer>
             <div class="bottom">
                 <div class="copy">
-                    copyright 자리
+                    COPYRIGHT ⓒ by WEBDESIGN. ALL RIGHTS RESERVED
                 </div>
                 <div class="site">
-                    <div class="SNS">
-                        sns자리
+                    <div class="sns">
+                        <li><a href="#"><img src="images/sns1.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/sns2.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/sns3.jpg" alt=""></a></li>
                     </div>
                     <div class="familysite">
-                        패밀리 사이트 자리
+                        <select name="sitelist">
+                            <option value="#">패밀리사이트1</option>
+                            <option value="#">패밀리사이트2</option>
+                            <option value="#">패밀리사이트3</option>
+                        </select>
                     </div>
                 </div>
             </div>
